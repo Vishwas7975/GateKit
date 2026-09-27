@@ -1,0 +1,10 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Allow direct access to existing files/folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route all other requests through index.php
+RewriteRule ^(.*)$ index.php [QSA,L]

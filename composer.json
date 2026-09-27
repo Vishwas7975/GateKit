@@ -1,0 +1,16 @@
+{
+  "name": "vishwas7975/gatekit",
+  "description": "A minimal, standalone PHP authentication starter kit — register, login, Google OAuth, and OTP-based password reset.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "firebase/php-jwt": "^6.11",
+    "phpmailer/phpmailer": "^7.1"
+  },
+  "config": {
+    "audit": {
+      "block-insecure": false
+    }
+  }
+}
